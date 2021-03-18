@@ -1,0 +1,16 @@
+
+
+body {
+  background-color: #FFB32B;
+  /* margin: 0; */
+  font-family: 'Playfair Display', serif;
+  font-size: auto;
+}
+
+
+
+.firsthr{
+  width: 100%;
+  height: 10px;
+  color: #007580;
+}
