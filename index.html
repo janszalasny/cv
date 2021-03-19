@@ -4,7 +4,7 @@
 <head>
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
   <meta charset="utf-8">
@@ -30,7 +30,8 @@
 <body>
 <div class="topcontainer">
 
-          <h1>J. A. Szalasny</h1>
+          <h1>J. A.</h1>
+          <h1>Szalasny</h1>
           <p> Junior emoji designer </p>
           <p>  I love coffee </p>
 
@@ -43,6 +44,30 @@
 
 
   <script src="//code.tidio.co/xxlkedxwkncrqskmfbcf0bodqqvrav7p.js" async></script>
+  <script>
+
+    (function() {
+
+        function onTidioChatApiReady() {
+
+          document.querySelector('#tidio-chat iframe').contentDocument.body.setAttribute('style', 'font-family: 'Montserrat Alternates', sans-serif !important');
+
+        }
+
+        if (window.tidioChatApi) {
+
+            window.tidioChatApi.on('ready', onTidioChatApiReady)
+
+        } else {
+
+            document.addEventListener('tidioChat-ready', onTidioChatApiReady);
+
+        }
+
+    })();
+
+</script>
+
 </body>
 
 </html>
