@@ -19,11 +19,13 @@
   <script src="https://kit.fontawesome.com/e631c69067.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Chango&family=Comic+Neue:wght@300&family=New+Tegomin&family=Syne+Mono&family=Train+One&display=swap" rel="stylesheet">
 
+
+
   <link rel="stylesheet" href="stylehotel.css">
   <meta charset="utf-8">
 
 
-  <title>zadanie1_2</title>
+  <title>Hotel Marmur</title>
 
   <!-- **************************** Google Analytics **************************** -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179783611-1"></script>
@@ -36,6 +38,11 @@
     gtag('js', new Date());
 
     gtag('config', 'UA-179783611-1');
+  </script>
+
+
+  <script type="text/javascript">
+    tidioChatApi.setColorPalette("#2b2e4a");
   </script>
 </head>
 
@@ -68,14 +75,14 @@
               <div class="contactbuttons">
 
 
-                <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Bottom popover">
-                  Popover on bottom
+                <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Ceny ustalane są indywidualnie.">
+                  Cena
                 </button>
-                <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Bottom popover">
-                  Popover on bottom
+                <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="W sercu Świnoujścia">
+                  Lokalizacja
                 </button>
-                <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Bottom popover">
-                  Popover on bottom
+                <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Prosimy o kontakt przez czat : )">
+                  Kontakt
                 </button>
 
               </div>
@@ -113,7 +120,9 @@
         <form action="https://gmail.us1.list-manage.com/subscribe/post?u=49fd99400b7c773171f1196fa&amp;id=9eba8e1554" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
           <div id="mc_embed_signup_scroll">
             <h2>Zarezerwuj swoją wizytę w hotelu Marmur</h2>
-            <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+
+            <p>Podaj nam swoje dane oraz datę przyjazdu - odezwiemy się do Ciebie przez maila.</p>
+            <div class="indicates-required"><span class="asterisk">*</span> wymagane</div>
 
             <div class="mc-field-group">
               <label for="mce-FNAME">Imię </label>
@@ -123,27 +132,41 @@
               <label for="mce-LNAME">Nazwisko </label>
               <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
             </div>
+            <strong>Ile tygodni ma trwać wizyta?</strong>
+
+
+            <div class="tygodnie">
+
+
+            <div class="mc-field-group input-group" >
+
+
+                <input type="radio" value="First Choice" name="MMERGE5" id="mce-MMERGE5-0"><label for="mce-MMERGE5-0">Jeden tydzień</label>
+                <input type="radio" value="Second Choice" name="MMERGE5" id="mce-MMERGE5-1"><label for="mce-MMERGE5-1">Dwa tygodnie </label>
+                <input type="radio" value="Third Choice" name="MMERGE5" id="mce-MMERGE5-2"><label for="mce-MMERGE5-2">Trzy tygodnie </label>
+
+            </div>
             <div class="mc-field-group">
-              <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
+              <label for="mce-EMAIL">Email <span class="asterisk">*</span>
               </label>
               <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
             </div>
             <div class="mc-field-group size1of2">
-
-
+</div>
+        </div>
               <div class="">
 
 
-                <label>Date</label>
+                <label>Data</label>
                 <input type="date" name="" value="">
               </div>
-            </div>
+
             <div id="mce-responses" class="clear">
               <div class="response" id="mce-error-response" style="display:none"></div>
               <div class="response" id="mce-success-response" style="display:none"></div>
             </div> <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
             <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_49fd99400b7c773171f1196fa_9eba8e1554" tabindex="-1" value=""></div>
-            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+            <div class="clear"><input type="submit" value="Zarezerwuj" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
           </div>
         </form>
       </div>
@@ -173,10 +196,12 @@
   </div>
 
 
+  <h4 class="h4">W międzyczasie posłuchaj o hotelu:</h4>
 
-
-
+  <iframe class="playback" width="666" height="375" src="https://www.youtube.com/embed/O-GW3eUrn5w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
   <!--Popover-->
+
 
   <script type="text/javascript">
     var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
@@ -184,15 +209,17 @@
       return new bootstrap.Popover(popoverTriggerEl)
     })
   </script>
-<div class="powrot">
-  <a class="btn btn-warning"  href="index.html" role="button">Strona Główna</a>
-</div>
+
+
+
+
+  <div class="powrot">
+    <a class="btn btn-warning" href="index.html" role="button">Strona Główna</a>
+  </div>
 
   <!--**************************** Live chat ****************************-->
 
-  <script type="text/javascript">
-    tidioChatApi.setColorPalette("#2b2e4a");
-  </script>
+
   <script src="//code.tidio.co/xxlkedxwkncrqskmfbcf0bodqqvrav7p.js" async></script>
 </body>
 

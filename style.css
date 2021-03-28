@@ -148,3 +148,36 @@ h1 {
 .hotelmarmurdiv {
   background-color: red;
 }
+
+.zadanie1_15{
+
+  border: solid 1px;
+}
+
+.p151{
+color: red;
+border: dotted 3px;
+border-color: red;
+margin: 5px 5px 5px;
+}
+
+.p152{
+color: blue;
+border: dashed 3px;
+border-color: blue;
+margin: 5px 5px 5px;
+}
+
+.p153{
+color: purple;
+border: groove 3px;
+border-color: purple;
+margin: 5px 5px 5px;
+}
+
+.p154{
+color: pink;
+border: double 3px;
+border-color: pink;
+margin: 5px 5px 5px;
+}
