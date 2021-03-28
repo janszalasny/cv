@@ -1,0 +1,54 @@
+body {
+  /* margin-left: 5em;
+  margin-right: 5em; */
+  background-image: linear-gradient(#e84545, #2b2e4a);
+  background-repeat: repeat;
+  text-align: center;
+  /* background-color: #2b2e4a; */
+  /* background-image: url(https://i.imgur.com/B1wSx3d.jpg); */
+  background-size: 1000px;
+
+  /* background-repeat: repeat; */
+
+}
+
+.Mailchimp {
+  font-family: 'New Tegomin', serif;
+  margin-top: 5em;
+  color: #fff;
+  font-size: 15px;
+}
+
+.powrot {
+  margin-top: 700px;
+}
+
+/* Navbar */
+.nav-item {
+  font-size: 1rem;
+  float: left;
+  /* margin-left: 500px; */
+  padding: 0 18px;
+  position: static;
+}
+
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: 'New Tegomin', serif;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: 'New Tegomin', serif;
+}
+
+.tytul{
+
+  margin-right: 500px;}
+  /* margin-bottom: 400px;} */
