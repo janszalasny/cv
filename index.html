@@ -299,24 +299,19 @@ ctx.strokeText("XDDDD", 10, 50);
     })();
 </script>
   
-  
-  <script>
-  <!-- Use code below to use tidioChatApi regardless of the way it is loaded - async or sync -->
-  (function() {
-    function onTidioChatApiReady() {
-      tidioChatApi.on('resize', function(dimension){
-console.log('resize', dimension); // output: resize {width: 300px, height: 100px};
-});
-    }
-    
-    
-    if (window.tidioChatApi) {
-      window.tidioChatApi.on('ready', onTidioChatApiReady)
-    } else {
-      document.addEventListener('tidioChat-ready', onTidioChatApiReady);
-    }
-  })();
+    <script>
+    (function() {
+        function onTidioChatApiReady() {
+          document.querySelector('.widgetLabel large moveFromRightLabel-enter-done').contentDocument.body.setAttribute('style', 'font-family: monaco,arial,helvetica');
+        }
+        if (window.tidioChatApi) {
+            window.tidioChatApi.on('ready', onTidioChatApiReady)
+        } else {
+            document.addEventListener('tidioChat-ready', onTidioChatApiReady);
+        }
+    })();
 </script>
+
 
 
   
