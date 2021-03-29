@@ -304,7 +304,9 @@ ctx.strokeText("XDDDD", 10, 50);
   <!-- Use code below to use tidioChatApi regardless of the way it is loaded - async or sync -->
   (function() {
     function onTidioChatApiReady() {
-      tidioChatApi.method('badgeShow');
+      tidioChatApi.on('resize', function(dimension){
+console.log('resize', dimension); // output: resize {width: 300px, height: 100px};
+});
     }
     
     
