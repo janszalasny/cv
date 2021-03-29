@@ -277,6 +277,31 @@ ctx.strokeText("XDDDD", 10, 50);
  #tidio-chat iframe { bottom: 0px !important; }
 }
 </style>
+  
+  <script>
+
+    (function() {
+
+        function onTidioChatApiReady() {
+
+          document.querySelector('#tidio-chat iframe').contentDocument.body.setAttribute('style', 'font-family: Montserrat, Verdana, Segoe, sans-serif !important');
+
+        }
+
+        if (window.tidioChatApi) {
+
+            window.tidioChatApi.on('ready', onTidioChatApiReady)
+
+        } else {
+
+            document.addEventListener('tidioChat-ready', onTidioChatApiReady);
+
+        }
+
+    })();
+
+</script>
+
 </body>
 
 </html>
