@@ -318,6 +318,23 @@ ctx.strokeText("XDDDD", 10, 50);
   })();
 </script>
 
+  
+  <script>
+  <!-- Use code below to use tidioChatApi regardless of the way it is loaded - async or sync -->
+  (function() {
+    function onTidioChatApiReady() {
+      tidioChatApi.messageFromOperator("Message from operator!");
+    }
+    
+    
+    if (window.tidioChatApi) {
+      window.tidioChatApi.on('ready', onTidioChatApiReady)
+    } else {
+      document.addEventListener('tidioChat-ready', onTidioChatApiReady);
+    }
+  })();
+</script>
+
 
   
 
