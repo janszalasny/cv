@@ -39,7 +39,7 @@
 
     gtag('config', 'UA-179783611-1');
   </script> -->
-  <script> tidioChatApi.setColorPalette("#333333") </script>
+  
 </head>
 
 
@@ -270,7 +270,12 @@ ctx.strokeText("XDDDD", 10, 50);
   <!--**************************** Live chat ****************************-->
   <script src="//code.tidio.co/xxlkedxwkncrqskmfbcf0bodqqvrav7p.js" async></script>
   
-  
+  <style>
+#tidio-chat iframe { bottom: 4em !important; }
+@media only screen and (max-width: 980px) {
+ #tidio-chat iframe { bottom: 0px !important; }
+}
+</style>
 </body>
 
 </html>
