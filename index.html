@@ -281,7 +281,7 @@ ctx.strokeText("XDDDD", 10, 50);
   <script>
     (function() {
         function onTidioChatApiReady() {
-          document.querySelector('#tidio-chat iframe').contentDocument.body.setAttribute('style', 'font-family: Montserrat:wght@900, sans-serif !important');
+          document.querySelector('#tidio-chat iframe').contentDocument.body.setAttribute('style', 'font-family: Montserrat, sans-serif !important');
         }
         if (window.tidioChatApi) {
             window.tidioChatApi.on('ready', onTidioChatApiReady)
@@ -291,13 +291,8 @@ ctx.strokeText("XDDDD", 10, 50);
     })();
 </script>
   
-   <script>
-    (function() {
-        function onTidioChatApiReady() {
-          tidioChatApi.setColorPalette("#333333");
-        }
-    })();
-</script>
+
+
   
 
 </body>
