@@ -276,11 +276,6 @@ ctx.strokeText("XDDDD", 10, 50);
   <style>
     #tidio-chat iframe { 
     bottom: 4em !important;}
-    .tidio-135wcf7 {margin-right -200px !important;}
-    
-                  
-
-  
   </style>
   
 
@@ -289,8 +284,8 @@ ctx.strokeText("XDDDD", 10, 50);
   <script>
     (function() {
         function onTidioChatApiReady() {
-          document.querySelector('#tidio-chat iframe').contentDocument.body.setAttribute('style', 'font-family: monaco,arial,helvetica');
-          document.querySelector('#tidio-chat iframe').contentDocument.body.setAttribute('style', 'border: solid');
+          document.querySelector('#tidio-chat iframe').contentDocument.body.setAttribute('style', 'font-family: monaco,arial,helvetica' 'border: solid');
+          
         }
         if (window.tidioChatApi) {
             window.tidioChatApi.on('ready', onTidioChatApiReady)
