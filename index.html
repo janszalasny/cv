@@ -295,6 +295,20 @@ ctx.strokeText("XDDDD", 10, 50);
     })();
 </script>
 
+  <script>
+    (function() {
+        function onTidioChatApiReady() {
+          tidioChatApi.setColorPalette("#333333", "#000000");
+          
+        }
+        if (window.tidioChatApi) {
+            window.tidioChatApi.on('ready', onTidioChatApiReady)
+        } else {
+            document.addEventListener('tidioChat-ready', onTidioChatApiReady);
+        }
+    })();
+</script>
+
   
 
 </body>
