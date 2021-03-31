@@ -46,8 +46,6 @@
     <label>date</label>
     <input type="date" name="" value="">
     <hr>
-     <a href="#" style="margin-left:500px;" onclick="tidioChatApi.open()">Open chat!</a>
-    <hr>
       <label>range</label>
     <input type="range" name="" value="">
     <hr>
@@ -69,9 +67,24 @@
     
   
     
-  <script src="//code.tidio.co/xxlkedxwkncrqskmfbcf0bodqqvrav7p.js" async></script>
+  
     
- 
+<script src="//code.tidio.co/xxlkedxwkncrqskmfbcf0bodqqvrav7p.js" async></script>
+<!-- Swap your javascript code above -->
+<script>
+   (function() {
+    function onTidioChatApiReady() {
+      (function() {
+          window.tidioChatApi.open();
+      })();
+    }
+    if (window.tidioChatApi) {
+      window.tidioChatApi.on("ready", onTidioChatApiReady);
+    } else {
+      document.addEventListener("tidioChat-ready", onTidioChatApiReady);
+    }
+  })();
+</script>
     
     
     
