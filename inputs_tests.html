@@ -69,21 +69,21 @@
     
   
     
-<script src="//code.tidio.co/xxlkedxwkncrqskmfbcf0bodqqvrav7p.js" async></script>
-<!-- Swap your javascript code above -->
+
 <script>
    (function() {
-    function onTidioChatApiReady() {
-      (function() {
-          window.tidioChatApi.open();
-      })();
-    }
-    if (window.tidioChatApi) {
-      window.tidioChatApi.on("ready", onTidioChatApiReady);
-    } else {
-      document.addEventListener("tidioChat-ready", onTidioChatApiReady);
-    }
-  })();
+  function onTidioChatApiReady() {
+   tidioChatApi.setContactProperties({
+  company_name: "Tidio Ltd.",
+  favourite_feature: "Chatbots"
+});
+  }
+  if (window.tidioChatApi) {
+    window.tidioChatApi.on("ready", onTidioChatApiReady);
+  } else {
+    document.addEventListener("tidioChat-ready", onTidioChatApiReady);
+  }
+})();
 </script>
     
     
