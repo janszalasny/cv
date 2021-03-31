@@ -71,12 +71,9 @@
    <script src="//code.tidio.co/xxlkedxwkncrqskmfbcf0bodqqvrav7p.js" async></script> 
 
 <script>
-   (function() {
+  (function() {
   function onTidioChatApiReady() {
-   tidioChatApi.setContactProperties({
-  company_name: "Tidio Ltd.",
-  favourite_feature: "Chatbots"
-});
+    tidioChatApi.track("portfolio_page_visited");
   }
   if (window.tidioChatApi) {
     window.tidioChatApi.on("ready", onTidioChatApiReady);
@@ -85,6 +82,8 @@
   }
 })();
 </script>
+    
+    
     
     
     
