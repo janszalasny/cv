@@ -70,5 +70,22 @@
     
     
     <script src="//code.tidio.co/xxlkedxwkncrqskmfbcf0bodqqvrav7p.js"></script>
+    
+    <script type="text/javascript">
+    (function() {
+      function onTidioChatApiReady() {
+
+        tidioChatApi.setColorPalette("#e9896a");
+
+      }
+      if (window.tidioChatApi) {
+        window.tidioChatApi.on("ready", onTidioChatApiReady);
+      } else {
+        document.addEventListener("tidioChat-ready", onTidioChatApiReady);
+      }
+    })();
+  </script>
+    
+    
   </body>
 </html>
