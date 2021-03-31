@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title></title>
@@ -74,7 +74,7 @@
   <script>
     (function() {
         function onTidioChatApiReady() {
-          document.querySelector('#tidio-chat iframe').contentDocument.body.setAttribute('style', 'font-family: monaco, arial, helvetica');
+          document.tidioChatLang = document.querySelector("html").getAttribute("lang");
           
         }
         if (window.tidioChatApi) {
