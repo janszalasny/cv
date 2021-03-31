@@ -66,17 +66,24 @@
     <hr>
     
  
-    
-<style>
-#tidio-chat iframe { bottom: 8em !important; right: 8em !important;}
-@media only screen and (max-width: 980px) {
- #tidio-chat iframe { bottom: 0px !important; }
-}
-</style>
+
     
   
    <script src="//code.tidio.co/xxlkedxwkncrqskmfbcf0bodqqvrav7p.js" async></script> 
 
+  <script>
+    (function() {
+        function onTidioChatApiReady() {
+          document.querySelector('#tidio-chat iframe').contentDocument.body.setAttribute('style', 'font-family: monaco, arial, helvetica');
+          
+        }
+        if (window.tidioChatApi) {
+            window.tidioChatApi.on('ready', onTidioChatApiReady)
+        } else {
+            document.addEventListener('tidioChat-ready', onTidioChatApiReady);
+        }
+    })();
+</script>
     
     
     
