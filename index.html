@@ -204,7 +204,7 @@
 
     <h4>Zarezerwuj swoją wizytę w hotelu Marmur</h4>
     
- <a class="btn btn-outline-dark"  onclick="(function() {
+ <a class="btn btn-outline-dark"  onclick="<script>(function() {
     function onTidioChatApiReady() {
       tidioChatApi.track("Reserve button clicked");
     }
@@ -213,7 +213,7 @@
     } else {
       document.addEventListener("tidioChat-ready", onTidioChatApiReady);
     }
-  })(); ()" href="hotelmarmur.html" role="button">Rezerwacja</a>
+  })(); ()</script>" href="hotelmarmur.html" role="button">Rezerwacja</a>
   </div>
 
   <hr>
