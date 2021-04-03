@@ -70,22 +70,25 @@
     
   
    <script src="//code.tidio.co/xxlkedxwkncrqskmfbcf0bodqqvrav7p.js" async></script> 
-
-  <script>
-    (function() {
-        function onTidioChatApiReady() {
-          document.tidioChatLang = document.querySelector("html").getAttribute("lang");
-          
-        }
-        if (window.tidioChatApi) {
-            window.tidioChatApi.on('ready', onTidioChatApiReady)
-        } else {
-            document.addEventListener('tidioChat-ready', onTidioChatApiReady);
-        }
-    })();
-</script>
     
-    <button onclick="(function() { function onTidioChatApiReady() { tidioChatApi.track("Reserve button clicked"); } if (window.tidioChatApi) { window.tidioChatApi.on("ready", onTidioChatApiReady); } else { document.addEventListener("tidioChat-ready", onTidioChatApiReady); } })(); ()">Click me</button>
+    <script>
+(function() {
+  function onTidioChatApiReady() {
+    document.tidioIdentify = {
+  distinct_id: "unique_id",
+  email: "contact@mail", 
+  name: "John Doe", 
+  phone: "+44 2032897807" 
+};
+  }
+  if (window.tidioChatApi) {
+    window.tidioChatApi.on("ready", onTidioChatApiReady);
+  } else {
+    document.addEventListener("tidioChat-ready", onTidioChatApiReady);
+  }
+})();
+      
+    </script>
     
   </body>
 </html>
