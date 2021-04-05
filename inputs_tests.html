@@ -83,16 +83,18 @@
     
     
    
-(function() {
-  function onTidioChatApiReady() {
-    tidioChatApi.messageFromVisitor("Message from visitor!");
-  }
-  if (window.tidioChatApi) {
-    window.tidioChatApi.on("ready", onTidioChatApiReady);
-  } else {
-    document.addEventListener("tidioChat-ready", onTidioChatApiReady);
-  }
-})();
+<script type="text/javascript">
+    (function() {
+      function onTidioChatApiReady() {
+        tidioChatApi.messageFromVisitor("Message from visitor!");
+      }
+      if (window.tidioChatApi) {
+        window.tidioChatApi.on("ready", onTidioChatApiReady);
+      } else {
+        document.addEventListener("tidioChat-ready", onTidioChatApiReady);
+      }
+    })();
+  </script>
     
     
   </body>
