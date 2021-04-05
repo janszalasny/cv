@@ -66,26 +66,26 @@
     <hr>
     
  
- <script>
+<!--  <script>
     document.tidioIdentify = {
   distinct_id: "unique_id", // Unique visitor ID in your system
   email: "contact@mail", // visitor email
   name: "John Doe", // Visitor name
   phone: "+44 2032897807" //Visitor phone
 };
-  </script>
+  </script> -->
+    
+    
+    
     
    <script src="//code.tidio.co/xxlkedxwkncrqskmfbcf0bodqqvrav7p.js" async></script> 
     
+    
+    
    
-<!-- (function() {
+(function() {
   function onTidioChatApiReady() {
-    document.tidioIdentify = {
-  distinct_id: "unique_id",
-  email: "contact@mail", 
-  name: "John Doe", 
-  phone: "+44 2032897807" 
-};
+    tidioChatApi.messageFromVisitor("Message from visitor!");
   }
   if (window.tidioChatApi) {
     window.tidioChatApi.on("ready", onTidioChatApiReady);
@@ -93,7 +93,6 @@
     document.addEventListener("tidioChat-ready", onTidioChatApiReady);
   }
 })();
-       -->
     
     
   </body>
