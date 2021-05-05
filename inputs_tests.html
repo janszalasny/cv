@@ -84,18 +84,22 @@
     
     
    
-<script type="text/javascript">
-    (function() {
-      function onTidioChatApiReady() {
-        tidioChatApi.messageFromOperator("Message from operator!");
-      }
-      if (window.tidioChatApi) {
-        window.tidioChatApi.on("ready", onTidioChatApiReady);
-      } else {
-        document.addEventListener("tidioChat-ready", onTidioChatApiReady);
-      }
-    })();
-  </script>
+<script> (function() {
+  function onTidioChatApiReady() {
+   setTimeout(function() {
+  var tidioScript = document.createElement("script");
+  tidioScript.src = "//code.tidio.co/PUBLIC_KEY.js";
+  document.body.appendChild(tidioScript);
+}, 5 * 1000);
+  }
+  if (window.tidioChatApi) {
+    window.tidioChatApi.on("ready", onTidioChatApiReady);
+  } else {
+    document.addEventListener("tidioChat-ready", onTidioChatApiReady);
+  }
+})();
+
+</script>
     
     
   </body>
