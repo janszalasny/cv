@@ -8,8 +8,8 @@
     <meta name="author" content="" />
     <title>J. A. Szalasny</title>
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome-->
+    <script src="https://kit.fontawesome.com/e631c69067.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -25,6 +25,7 @@
 
     <!-- previous body color: #3c8dad -->
     <!-- previous background color: #fff5fd; -->
+    <!-- previous hover color: 974a2d changed to a3acbe  -->
     <!-- Navigation-->
 
 
@@ -38,19 +39,21 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav">
-                <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="#about"><i class="fas fa-user-cog"></i> About me </a></li>
+                <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="#about"><i class="fa fa-user-astronaut"></i></i> About me </a></li>
+                <!-- <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="#goal"><i class="fas fa-lightbulb"></i> My goal</a></li> -->
                 <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="#experience"><i class="fas fa-rocket"></i> Experience </i></a></li>
                 <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="#education"><i class="fas fa-university"></i> Education </a></li>
-                <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="#skills"><i class="fas fa-wrench"></i> Skills </a></li>
-                <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="#interests"><i class="fas fa-snowboarding"></i> Interests </a></li>
-                <!-- <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="#awards">Contact</a></li> -->
+                <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="#expertise"><i class="fas fa-wrench"></i> Expertise </a></li>
+                <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="#enjoyment"><i class="fas fa-snowboarding"></i> Enjoyment </a></li>
+
 
         </div>
 
 
 
         <div class="dark_mode">
-          <button type="button" id="myButton1" class="btn btn-dark">Dark Mode</button></div>
+            <button type="button" id="myButton1" class="btn btn-outline-dark">Dark Mode</button>
+        </div>
 
 
 
@@ -90,21 +93,34 @@
 
                 </div>
 
-                <p class="lead mb-5">I'm Jan, nice to meet you! <i class="far fa-smile-beam"></i> I'm an aspiring developer with a great passion for learning new skills. Currently, I'm a support specialist at Tidio, where I've helped thousands of
+                <p class="lead mb-5">Hello, I'm Jan and I'm pleased to see you here! <i class="far fa-smile-beam"></i> I'm an aspiring developer with a great passion for learning new skills. Currently, I'm a support specialist at Tidio, where I've helped thousands of
                     people to make everything up and running.</p>
                 <p class="lead mb-5">To see my online presence, please click the icons below <i class="fas fa-hand-point-down"></i></p>
                 <div class="social-icons">
-                    <a class="social-icon" href="https://www.linkedin.com/in/jan-szalasny/"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="social-icon" href="https://www.github.com/janszalasny"><i class="fab fa-github"></i></a>
-                    <a class="social-icon" href="https://www.instagram.com/jaszalasny/"><i class="fab fa-instagram"></i></a>
-                    <a class="social-icon" href="https://soundcloud.com/orhidee"><i class="fab fa-soundcloud"></i></a>
-                    <a class="social-icon" href="https://www.last.fm/user/jasieklsd"><i class="fab fa-lastfm"></i></a>
+                    <a class="social-icon" href="https://www.linkedin.com/in/jan-szalasny"target="_blank"data-toggle="tooltip" data-placement="top" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="social-icon" href="https://www.github.com/janszalasny"target="_blank"data-toggle="tooltip" data-placement="top" title="Github"><i class="fab fa-github"></i></a>
+                    <a class="social-icon" href="https://www.instagram.com/jaszalasny/"target="_blank"data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a class="social-icon" href="https://soundcloud.com/orhidee"target="_blank"data-toggle="tooltip" data-placement="top" title="Soundcloud"><i class="fab fa-soundcloud"></i></a>
+                    <a class="social-icon" href="https://www.last.fm/user/jasieklsd"target="_blank"data-toggle="tooltip" data-placement="top" title="Last.fm"><i class="fab fa-lastfm"></i></a>
 
                 </div>
             </div>
         </section>
         <hr class="m-0" />
 
+
+        <!-- Goal-->
+
+
+        <!-- <section class="resume-section" id="goal">
+            <div class="resume-section-content">
+                <h2 class="mb-5">test h2</h2>
+                <p><i class="fas fa-code"></i> </p>
+
+
+            </div>
+
+        </section> -->
 
         <!-- Experience-->
 
@@ -141,8 +157,6 @@
 
 
 
-
-
         <section class="resume-section" id="education">
             <div class="resume-section-content">
                 <h2 class="mb-5">Education</h2>
@@ -151,32 +165,52 @@
                         <h3 class="mb-0">Warsaw University of Life Sciences</h3>
                         <div class="subheading mb-3">Informatics and Econometrics</div>
                         <div>I've just started. I'm learing the quantitative application of statistical and mathematical <i class="fas fa-square-root-alt"></i> models using data to develop theories or test existing hypotheses in economics and
-                            to forecast future trends from historical data.</div>
+                            to forecast future trends from historical data. </div>
 
 
 
                     </div>
                     <div class="flex-shrink-0"><span class="text-primary">2020 - 2023</span></div>
                 </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between">
+
+
+                <!-- <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="flex-grow-1">
                         <h3 class="mb-0">III Adam Mickiewicz High School in Tarnów</h3>
                         <div class="subheading mb-3">Mathematics and Physics </div>
 
                     </div>
-                    <div class="flex-shrink-0"><span class="text-primary">2014 - 2017</span></div>
+                    <div class="flex-shrink-0"><span class="text-primary mb-5">2014 - 2017</span></div>
+                </div> -->
+
+                <div class="d-flex flex-column flex-md-row justify-content-between">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Certificates</h3>
+                        <div class="subheading mb-3">Building AI </div>
+                        <div>An extensive online course focused on learning about the practical methods that make artificial intelligence a reality. It was a solid introduction to the basics of machine learning and neural networks. <a href="https://certificates.mooc.fi/validate/vihonj59o0s"target="_blank">See authentication <i class="fas fa-directions"></i></a></div>
+
+                            <div class="subheading mb-3">Elements of AI </div>
+                            <div>Introductory course defining what AI is, providing a general understanding of how it affects humans’ life. <a href="https://certificates.mooc.fi/validate/xnagjayaess"target="_blank">See authentication <i class="fas fa-directions"></i></a></div>
+
+
+                    </div>
+
+                    <div class="flex-shrink-0"><span class="text-primary">2021</span></div>
                 </div>
+
+
+
             </div>
         </section>
         <hr class="m-0" />
 
 
-        <!-- Skills-->
+        <!-- Expertise-->
 
 
-        <section class="resume-section" id="skills">
+        <section class="resume-section" id="expertise">
             <div class="resume-section-content">
-                <h2 class="mb-5">Skills</h2>
+                <h2 class="mb-5">Expertise</h2>
                 <div class="subheading mb-3">Programming Languages & Tools</div>
                 <ul class="list-inline dev-icons">
                     <li class="list-inline-item"><i class="fab fa-html5"></i></li>
@@ -212,77 +246,81 @@
         <hr class="m-0" />
 
 
-        <!-- Interests-->
+        <!-- enjoyment-->
 
 
-        <section class="resume-section" id="interests">
+        <section class="resume-section" id="enjoyment">
             <div class="resume-section-content">
-                <h2 class="mb-5">Interests</h2>
-                <p>I'm a dog lover! <i class="fas fa-paw"></i></p>
-                <p class="mb-0">You might have seen a redirection to my last.fm profile before - it's both involved with my passion to music and gatheric data about the music I listened to. Feel free to check my own productions:</p>
+                <h2 class="mb-5">Enjoyment</h2>
+                <ul>
 
-                <!-- <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
-                  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/797567770&color=%230f4c75&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-                <div
-                  style="font-size: 10px; color: #0f4c75;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-                    <a href="https://soundcloud.com/orhidee" title="Orhidee" target="_blank" style="color: #0f4c75; text-decoration: none;">Orhidee</a> · <a href="https://soundcloud.com/orhidee/palm-grove" title="Never seen my face" target="_blank"
-                      style="color: #0f4c75; text-decoration: none;">Never seen my face</a>
-                </div> -->
+
+                    <li>
+                        <h3>I'm a dog lover! <i class="fas fa-paw"></i> </h3>
+
+                        <p>Along with Ares (my adorable Husky) we enjoy long walks every day. She's particulary active, </p>
+                    </li>
+
+
+
+                    <li>
+                        <h3>Music <i class="fas fa-wave-square"></i></h3>
+                        <p class="mb-0">Music is one of my biggest passions. Apart from listening everyday to numerous songs from many different genres, I do produce myself.</p>
+                        <p>Sound design gives me a wonderful feeling of expressing myself. You can check one of my songs below <i class="far fa-hand-point-down"></i></p>
+                    </li>
+
+
+
+
+
+
+
+                    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+                      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/797567770&color=%230f4c75&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                    <div
+                      style="font-size: 10px; color: #0f4c75;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+                        <a href="https://soundcloud.com/orhidee" title="Orhidee" target="_blank" style="color: #0f4c75; text-decoration: none;">Orhidee</a> · <a href="https://soundcloud.com/orhidee/palm-grove" title="Never seen my face"
+                          target="_blank" style="color: #0f4c75; text-decoration: none;">Never seen my face</a>
+                    </div>
+                    <li>
+                        <h3>Sports <i class="fas fa-bicycle"></i></h3>
+                    </li>
+                </ul>
 
 
         </section>
         <hr class="m-0" />
 
 
-        <!-- Awards-->
+        <!-- Bootstrap core JS-->
 
 
-        <!-- <section class="resume-section" id="awards">
-            <div class="resume-section-content">
-                <h2 class="mb-5">:o</h2>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
 
 
+        <!-- Core theme JS-->
 
+        <script src="js/scripts.js"></script>
 
-        </section>
-
-
-    </div> -->
-
-
-
-    <!-- Bootstrap core JS-->
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
-
-
-    <!-- Core theme JS-->
-
-    <script src="js/scripts.js"></script>
-
-    <script>
-        function updateFlashlight(e) {
-            var style = document.body.style;
-            style.backgroundPositionX = e.pageX - 250 + "px";
-            style.backgroundPositionY = e.pageY - 250 + "px";
-        }
-
-        document.querySelector(".dark_mode").onclick = function(e) {
-            var body = document.body;
-            body.classList.toggle("dark");
-            if (body.classList.contains("dark")) {
-                updateFlashlight(e);
-                ["mousemove", "touchstart", "touchmove", "touchend"].forEach(function(s) {
-                    document.documentElement.addEventListener(s, updateFlashlight, false);
-                });
-            } else {
-                ["mousemove", "touchstart", "touchmove", "touchend"].forEach(function(s) {
-                    document.documentElement.removeEventListener(s, updateFlashlight, false);
-                });
+        <script>
+            document.querySelector(".dark_mode").onclick = function(e) {
+                var body = document.body;
+                body.classList.toggle("dark");
+                if (body.classList.contains("dark")) {
+                    updateFlashlight(e);
+                    ["mousemove", "touchstart", "touchmove", "touchend"].forEach(function(s) {
+                        document.documentElement.addEventListener(s, updateFlashlight, false);
+                    });
+                } else {
+                    ["mousemove", "touchstart", "touchmove", "touchend"].forEach(function(s) {
+                        document.documentElement.removeEventListener(s, updateFlashlight, false);
+                    });
+                }
             }
-        }
-    </script>
-</body>
+        </script>
+
+
+        <!-- livechat -->
+        <script src="//code.tidio.co/vqw94mntmckxlj3tof0sewsukelrbnj4.js" async></script>
 
 </html>
