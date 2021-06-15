@@ -56,7 +56,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  background-color: #fff5fd;
+  background-color: #ffeedb;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -213,7 +213,7 @@ a {
   text-decoration: underline;
 }
 a:hover {
-  color: #974a2d;
+  color: #a3acbe;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -3394,7 +3394,7 @@ textarea.form-control-lg {
   text-decoration: underline;
 }
 .btn-link:hover {
-  color: #974a2d;
+  color: #a3acbe;
 }
 .btn-link:disabled, .btn-link.disabled {
   color: #47597e;
@@ -3862,7 +3862,7 @@ textarea.form-control-lg {
   }
 }
 .nav-link:hover, .nav-link:focus {
-  color: #974a2d;
+  color: #a3acbe;
 }
 .nav-link.disabled {
   color: #47597e;
@@ -4567,13 +4567,13 @@ textarea.form-control-lg {
 }
 .page-link:hover {
   z-index: 2;
-  color: #974a2d;
+  color: #a3acbe;
   background-color: #e9ecef;
   border-color: #dee2e6;
 }
 .page-link:focus {
   z-index: 3;
-  color: #974a2d;
+  color: #a3acbe;
   background-color: #e9ecef;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(189, 93, 56, 0.25);
@@ -10991,7 +10991,7 @@ section.resume-section .resume-section-content {
 
 .dark_mode {
   align-self: center;
-  width: 1000px;
+  width: 100spx;
   height: 50px;
   border-radius: 5px;
   background-size: 76px 24px;
@@ -11000,3 +11000,298 @@ section.resume-section .resume-section-content {
   margin-bottom:10px;}
 body.dark { background-color: #231e23;  background-repeat: no-repeat; background-size: 500px 500px; }
 body.dark .dark_mode { background-position: 0 0; }
+
+
+
+/* animacja */
+.center-container{
+
+    height: 500px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: right; /*display: grid;place content: center dont work with position absolute; so use display: flex;*/
+    position: relative;
+}
+.square{
+    border: 3px solid #47597e;
+    width: 200px;
+    height: 375px;
+    position: absolute;
+}
+#a1{
+    animation: a1 5s linear infinite;
+
+}
+@keyframes a1{
+    50%{
+        border-radius: 100%;
+        transform: rotate(180deg);
+    }
+}
+#a2{
+    animation: a2 5s linear infinite;
+}
+@keyframes a2{
+    50%{
+        border-radius: 100%;
+        transform: rotate(170deg);
+    }
+}
+#a3{
+    animation: a3 5s linear infinite;
+}
+@keyframes a3{
+    50%{
+        border-radius: 100%;
+        transform: rotate(160deg);
+    }
+}
+#a4{
+    animation: a4 5s linear infinite;
+}
+@keyframes a4{
+    50%{
+        border-radius: 100%;
+        transform: rotate(150deg);
+    }
+}
+#a5{
+    animation: a5 5s linear infinite;
+}
+@keyframes a5{
+    50%{
+        border-radius: 100%;
+        transform: rotate(140deg);
+    }
+}
+#a6{
+    animation: a6 5s linear infinite;
+}
+@keyframes a6{
+    50%{
+        border-radius: 100%;
+        transform: rotate(130deg);
+    }
+}
+#a7{
+    animation: a7 5s linear infinite;
+}
+@keyframes a7{
+    50%{
+        border-radius: 100%;
+        transform: rotate(120deg);
+    }
+}
+#a8{
+    animation: a8 5s linear infinite;
+}
+@keyframes a8{
+    50%{
+        border-radius: 100%;
+        transform: rotate(110deg);
+    }
+}
+
+#a9{
+    animation: a9 5s linear infinite;
+}
+@keyframes a9{
+    50%{
+        border-radius: 100%;
+        transform: rotate(100deg);
+    }
+}
+#a10{
+    animation: a10 5s linear infinite;
+}
+@keyframes a10{
+    50%{
+        border-radius: 100%;
+        transform: rotate(90deg);
+    }
+}
+#a11{
+    animation: a11 5s linear infinite;
+}
+@keyframes a11{
+    50%{
+        border-radius: 100%;
+        transform: rotate(80deg);
+    }
+}
+#a12{
+    animation: a12 5s linear infinite;
+}
+@keyframes a12{
+    50%{
+        border-radius: 100%;
+        transform: rotate(70deg);
+    }
+}
+#a13{
+    animation: a13 5s linear infinite;
+}
+@keyframes a13{
+    50%{
+        border-radius: 100%;
+        transform: rotate(60deg);
+    }
+}
+
+#a14{
+    animation: a14 5s linear infinite;
+}
+@keyframes a14{
+    50%{
+        border-radius: 100%;
+        transform: rotate(50deg);
+    }
+}
+#a15{
+    animation: a15 5s linear infinite;
+}
+@keyframes a15{
+    50%{
+        border-radius: 100%;
+        transform: rotate(40deg);
+    }
+}
+#a16{
+    animation: a16 5s linear infinite;
+}
+@keyframes a16{
+    50%{
+        border-radius: 100%;
+        transform: rotate(30deg);
+    }
+}
+#a17{
+    animation: a17 5s linear infinite;
+}
+@keyframes a17{
+    50%{
+        border-radius: 100%;
+        transform: rotate(20deg);
+    }
+}
+#a18{
+    animation: a18 5s linear infinite;
+}
+@keyframes a18{
+    50%{
+        border-radius: 100%;
+        transform: rotate(10deg);
+    }
+}
+
+
+
+//alternative
+// #a1{
+//     animation: a1 5s linear infinite;
+// }
+// @keyframes a1{
+//     50%{
+//         border-radius: 100%;
+//         transform: rotate(360deg);
+//     }
+// }
+// #a2{
+//     animation: a2 5s linear infinite;
+// }
+// @keyframes a2{
+//     50%{
+//         border-radius: 100%;
+//         transform: rotate(325deg);
+//     }
+// }
+// #a3{
+//     animation: a3 5s linear infinite;
+// }
+// @keyframes a3{
+//     50%{
+//         border-radius: 100%;
+//         transform: rotate(300deg);
+//     }
+// }
+// #a4{
+//     animation: a4 5s linear infinite;
+// }
+// @keyframes a4{
+//     50%{
+//         border-radius: 100%;
+//         transform: rotate(275deg);
+//     }
+// }
+/* hover  */
+
+.hover {
+    position: relative;
+    font-size: currentSize;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+
+
+  }
+
+.hover:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+
+  }
+.hover::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: rgb(15, 102, 117, 0.25);
+    z-index: -1;
+    transition: transform .5s ease-out;
+    transform: scaleX(0);
+    transform-origin: top right;
+    /* margin-left: -50px; */
+
+  }
+
+
+
+
+  @media (orientation: landscape) {
+    body {
+      grid-auto-flow: column;
+    }
+  }
+
+
+
+
+
+  /* img hover  */
+  .profilep
+{
+
+  width: 200px;
+  height: 200px;
+  /* center content using flex box */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* overlay */
+  box-shadow: 0 0 0 0px inset, 0 0 0px #fff;
+  /* hover out transition */
+  transition: box-shadow 2s;
+  float: left;
+  margin: 10px;
+  border-radius: 50%;
+  color: #ffeedb;
+}
+
+.profilep:hover {
+  box-shadow: 0 0 0 100px inset, 0 0 100px #fff, 0 0 0px #fff inset;
+  transition: box-shadow 2s;
+  color: #ffeedb;
+
+}
