@@ -11295,3 +11295,16 @@ body.dark .dark_mode { background-position: 0 0; }
   color: #ffeedb;
 
 }
+
+@media (max-width: 1000px) {
+
+  .profilep{
+
+    display: none;
+  }
+
+  .hover{
+
+    display: none;
+  }
+}
