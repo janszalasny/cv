@@ -11113,18 +11113,3 @@ body.dark .dark_mode { background-position: 0 0; }
   font-size: 21px;
   font-variant: inherit;
 }
-
-
-.navbar {
-  background: #272220;
-  height: 20px;
-}
-.btn-outline:hover,
-.btn-outline:active,
-.btn-outline:focus,
-.btn-outline.active {
-  background: #4fbfa8;
-  color: #ffffff;
-  border-color: #4fbfa8;
-
-}
