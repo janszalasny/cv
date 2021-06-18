@@ -11122,3 +11122,11 @@ body.dark .dark_mode { background-position: 0 0; }
   font-size: 21px;
   font-variant: inherit;
 }
+
+
+#tidio-chat iframe { 
+
+bottom: 4em !important
+border-radius: 0px 0px 0px 0px;
+
+}
