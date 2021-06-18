@@ -11000,7 +11000,16 @@ section.resume-section .resume-section-content {
   background-position: -26px 0;
   transition: 100ms;
   margin-bottom:10px;}
-body.dark { background-color: #231e23;  background-repeat: no-repeat; background-size: 500px 500px; }
+
+body.dark {
+  background-color: #231e23;
+  background-repeat: no-repeat;
+  background-size: 500px 500px;
+
+  }
+
+
+
 body.dark .dark_mode { background-position: 0 0; }
 
 
@@ -11069,13 +11078,13 @@ body.dark .dark_mode { background-position: 0 0; }
   float: left;
   margin: 10px;
   border-radius: 50%;
-  color: #F6F5F5;
+  color: #b4d3bc;
 }
 
 .profilep:hover {
   box-shadow: 0 0 0 100px inset, 0 0 100px #fff, 0 0 0px #fff inset;
   transition: box-shadow 2s;
-  color: #F6F5F5;
+  color: #f4f8f5;
 
 }
 
