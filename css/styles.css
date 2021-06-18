@@ -7006,8 +7006,22 @@ textarea.form-control-lg {
 
 .mb-5 {
   margin-bottom: 3rem !important;
+
+
 }
 
+.mb-x{
+  margin-bottom: 3rem !important;
+  text-shadow: 1px 1px #E1E8EB, 2px 2px #E1E8EB, 3px 3px #E1E8EB, 4px 4px #E1E8EB;
+  font-weight: 700;
+  line-height: 1.2;
+  max-width: 12ch;
+}
+
+/* .mb-s{
+text-shadow: 10px 10px #E1E8EB;
+
+} */
 .mb-auto {
   margin-bottom: auto !important;
 }
