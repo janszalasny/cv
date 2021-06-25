@@ -6981,7 +6981,7 @@ textarea.form-control-lg {
   margin-bottom: 0 !important;
   margin: 0 0 2rem;
     /* font-size: var(--title-size); */
-    text-shadow: 1px 1px #FFC107, 2px 2px #FFC107, 3px 3px #FFC107, 4px 4px #FFC107, 5px 5px #FFC107, 6px 6px #FFC107, 7px 7px #FFC107, 8px 8px #153a51, 9px 9px #153a51;
+    /* text-shadow: 1px 1px #FFC107, 2px 2px #FFC107, 3px 3px #FFC107, 4px 4px #FFC107, 5px 5px #FFC107, 6px 6px #FFC107, 7px 7px #FFC107, 8px 8px #153a51, 9px 9px #153a51; */
     text-transform: uppercase;
     font-weight: 700;
     line-height: 1.2;
@@ -7012,10 +7012,10 @@ textarea.form-control-lg {
 
 .mb-x{
   margin-bottom: 3rem !important;
-  text-shadow: 1px 1px #E1E8EB, 2px 2px #E1E8EB, 3px 3px #E1E8EB, 4px 4px #E1E8EB;
+  text-shadow: 1px 1px #E1E8EB, 2px 2px #E1E8EB;
   font-weight: 700;
   line-height: 1.2;
-  max-width: 12ch;
+
 }
 
 /* .mb-s{
@@ -11062,7 +11062,7 @@ body.dark .dark_mode { background-position: 0 0; }
     top: 0; right: 0; bottom: 0; left: 0;
     inset: 0 0 0 0;
     background: rgb(15, 102, 117, 0.25);
-    z-index: -1;
+    z-index: -12;
     transition: transform .5s ease-out;
     transform: scaleX(0);
     transform-origin: top right;
@@ -11100,13 +11100,14 @@ body.dark .dark_mode { background-position: 0 0; }
   float: left;
   margin: 10px;
   border-radius: 50%;
-  color: #b4d3bc;
+  color: #E1E8EB;
+  margin-top: -60px;
 }
 
 .profilep:hover {
   box-shadow: 0 0 0 100px inset, 0 0 100px #fff, 0 0 0px #fff inset;
   transition: box-shadow 2s;
-  color: #f4f8f5;
+  color: #E1E8EB;
 
 }
 
@@ -11131,6 +11132,10 @@ body.dark .dark_mode { background-position: 0 0; }
 
     display: none;
   }
+  .line-10{
+display: none;
+
+  }
 }
 
 .highlights{
@@ -11144,3 +11149,369 @@ body.dark .dark_mode { background-position: 0 0; }
   font-size: 21px;
   font-variant: inherit;
 }
+
+.mc_embed_signup{
+  font: Rubik, sans serif;
+  margin: auto;
+    width: 50%;
+    border: 3px solid #0f4c75 ;
+    padding: 10px;}
+/* loading */
+
+
+    .line-1 {
+  width:35px;
+  height:35px;
+  color: #046D8B;
+  --c:linear-gradient(currentColor 0 0);
+  background:
+    var(--c) 0 0,
+    var(--c) 100% 0,
+    var(--c) 100% 100%,
+    var(--c) 0 100%;
+  background-repeat: no-repeat;
+  animation: l1 1s infinite alternate;
+}
+
+@keyframes l1 {
+  0%   {background-size: 0    4px,4px 0   ,0    4px,4px 0   }
+  25%  {background-size: 100% 4px,4px 0   ,0    4px,4px 0   }
+  50%  {background-size: 100% 4px,4px 100%,0    4px,4px 0   }
+  75%  {background-size: 100% 4px,4px 100%,100% 4px,4px 0   }
+  90%,
+  100% {background-size: 100% 4px,4px 100%,100% 4px,4px 100%}
+}
+
+.line-2 {
+  width:35px;
+  height:35px;
+  color: #046D8B;
+  --c:linear-gradient(currentColor 0 0);
+  background:
+    var(--c) 0 0,
+    var(--c) 100% 0,
+    var(--c) 100% 100%,
+    var(--c) 0 100%;
+  background-repeat: no-repeat;
+  animation:
+    l2-1 2s infinite,
+    l2-2 2s infinite;
+}
+
+@keyframes l2-1 {
+  0%   {background-size: 0    4px,4px 0   ,0    4px,4px 0   }
+  12.5%{background-size: 100% 4px,4px 0   ,0    4px,4px 0   }
+  25%  {background-size: 100% 4px,4px 100%,0    4px,4px 0   }
+  37.5%{background-size: 100% 4px,4px 100%,100% 4px,4px 0   }
+  45%,
+  55%  {background-size: 100% 4px,4px 100%,100% 4px,4px 100%}
+  62.5%{background-size: 0    4px,4px 100%,100% 4px,4px 100%}
+  75%  {background-size: 0    4px,4px 0   ,100% 4px,4px 100%}
+  87.5%{background-size: 0    4px,4px 0   ,0    4px,4px 100%}
+  100% {background-size: 0    4px,4px 0   ,0    4px,4px 0   }
+}
+
+@keyframes l2-2 {
+  0%,49.9%{background-position: 0 0   ,100% 0   ,100% 100%,0 100%}
+  50%,100%{background-position: 100% 0,100% 100%,0    100%,0 0   }
+}
+
+.line-3 {
+  width:35px;
+  height:35px;
+  color: #046D8B;
+  --c1:linear-gradient(90deg,#0000 calc(100%/3),currentColor 0 calc(2*100%/3),#0000 0);
+  --c2:linear-gradient( 0deg,#0000 calc(100%/3),currentColor 0 calc(2*100%/3),#0000 0);
+  background:
+    var(--c1),
+    var(--c2),
+    var(--c1),
+    var(--c2);
+  background-size:300% 4px,4px 300%;
+  background-repeat: no-repeat;
+  animation: l3 1s infinite linear;
+}
+
+@keyframes l3 {
+  0%   {background-position: 50%  0,100% 100%,0    100%,0 0}
+  25%  {background-position: 0    0,100% 50% ,0    100%,0 0}
+  50%  {background-position: 0    0,100% 0   ,50%  100%,0 0}
+  75%  {background-position: 0    0,100% 0   ,100% 100%,0 50%}
+ 75.01%{background-position: 100% 0,100% 0   ,100% 100%,0 50%}
+  100% {background-position: 50%  0,100% 0   ,100% 100%,0 100%}
+}
+
+.line-4 {
+  width:80px;
+  height:40px;
+  color: #046D8B;
+  --c:linear-gradient(currentColor 0 0);
+  background:
+    var(--c),
+    var(--c),
+    var(--c),
+    var(--c),
+    var(--c),
+    var(--c),
+    var(--c);
+  background-repeat: no-repeat;
+  animation:
+    l4-1 1.5s infinite,
+    l4-2 1.5s infinite;
+}
+
+@keyframes l4-1 {
+  0%      {background-size: 0   4px,4px 0  ,0   4px,4px 0   ,0   4px,4px 0  ,0   4px}
+  7.14%   {background-size: 25% 4px,4px 0  ,0   4px,4px 0   ,0   4px,4px 0  ,0   4px}
+  14.29%  {background-size: 25% 4px,4px 50%,0   4px,4px 0   ,0   4px,4px 0  ,0   4px}
+  21.43%  {background-size: 25% 4px,4px 50%,25% 4px,4px 0   ,0   4px,4px 0  ,0   4px}
+  28.57%  {background-size: 25% 4px,4px 50%,25% 4px,4px 100%,0   4px,4px 0  ,0   4px}
+  35.71%  {background-size: 25% 4px,4px 50%,25% 4px,4px 100%,25% 4px,4px 0  ,0   4px}
+  42.86%  {background-size: 25% 4px,4px 50%,25% 4px,4px 100%,25% 4px,4px 50%,0   4px}
+  49%,
+  51%     {background-size: 25% 4px,4px 50%,25% 4px,4px 100%,25% 4px,4px 50%,25% 4px}
+  57.14%  {background-size: 0   4px,4px 50%,25% 4px,4px 100%,25% 4px,4px 50%,25% 4px}
+  64.29%  {background-size: 0   4px,4px 0  ,25% 4px,4px 100%,25% 4px,4px 50%,25% 4px}
+  71.43%  {background-size: 0   4px,4px 0  ,0   4px,4px 100%,25% 4px,4px 50%,25% 4px}
+  78.57%  {background-size: 0   4px,4px 0  ,0   4px,4px 0   ,25% 4px,4px 50%,25% 4px}
+  85.71%  {background-size: 0   4px,4px 0  ,0   4px,4px 0   ,0   4px,4px 50%,25% 4px}
+  92.86%  {background-size: 0   4px,4px 0  ,0   4px,4px 0   ,0   4px,4px 0  ,25% 4px}
+  100%    {background-size: 0   4px,4px 0  ,0   4px,4px 0   ,0   4px,4px 0  ,0   4px}
+}
+@keyframes l4-2 {
+  0%,49.9% {background-position:0 50%,bottom 20px left 16px,20px 0,50% 0,40px 100%,bottom 0 right 16px,60px 50% }
+  50%,100% {background-position:right 60px top 50%,16px 0,right 40px top 0,50% 100%,right 20px bottom 0,right 16px top 20px,100% 50%}
+}
+
+.line-5 {
+  width:40px;
+  height:40px;
+  color: #046D8B;
+  --c:linear-gradient(currentColor 0 0);
+  background:
+    var(--c) 0 50%,
+    var(--c) right 0 bottom 20px,
+    var(--c) 100% 0,
+    var(--c) 50% 0,
+    var(--c) right 20px bottom 0,
+    var(--c) 0 100%;
+  background-repeat: no-repeat;
+  animation: l5 1.5s infinite alternate;
+}
+
+
+@keyframes l5 {
+  0%     {background-size: 0    4px,4px 0  ,0   4px,4px 0   ,0    4px,4px 0   }
+  16.67% {background-size: 100% 4px,4px 0  ,0   4px,4px 0   ,0    4px,4px 0   }
+  33.33% {background-size: 100% 4px,4px 50%,0   4px,4px 0   ,0    4px,4px 0   }
+  50%    {background-size: 100% 4px,4px 50%,50% 4px,4px 0   ,0    4px,4px 0   }
+  66.67% {background-size: 100% 4px,4px 50%,50% 4px,4px 100%,0    4px,4px 0   }
+  83.33% {background-size: 100% 4px,4px 50%,50% 4px,4px 100%,50%  4px,4px 0   }
+  95%,
+  100%   {background-size: 100% 4px,4px 50%,50% 4px,4px 100%,50%  4px,4px 50% }
+}
+
+.line-6 {
+  width:40px;
+  height:40px;
+  color: #046D8B;
+  --c:linear-gradient(currentColor 0 0);
+  background:
+    var(--c),
+    var(--c),
+    var(--c),
+    var(--c),
+    var(--c),
+    var(--c);
+  background-repeat: no-repeat;
+  animation:
+    l6-1 2s infinite,
+    l6-2 2s infinite;
+}
+
+@keyframes l6-1 {
+  0%     {background-size: 0    4px,4px 0  ,0   4px,4px 0   ,0   4px,4px 0  }
+  8.33%  {background-size: 100% 4px,4px 0  ,0   4px,4px 0   ,0   4px,4px 0  }
+  16.67% {background-size: 100% 4px,4px 50%,0   4px,4px 0   ,0   4px,4px 0  }
+  25%    {background-size: 100% 4px,4px 50%,50% 4px,4px 0   ,0   4px,4px 0  }
+  33.33% {background-size: 100% 4px,4px 50%,50% 4px,4px 100%,0   4px,4px 0  }
+  41.67% {background-size: 100% 4px,4px 50%,50% 4px,4px 100%,50% 4px,4px 0  }
+  48%,
+  52%    {background-size: 100% 4px,4px 50%,50% 4px,4px 100%,50% 4px,4px 50%}
+  58.33% {background-size: 0    4px,4px 50%,50% 4px,4px 100%,50% 4px,4px 50%}
+  66.67% {background-size: 0    4px,4px 0  ,50% 4px,4px 100%,50% 4px,4px 50%}
+  75%    {background-size: 0    4px,4px 0  ,0   4px,4px 100%,50% 4px,4px 50%}
+  83.33% {background-size: 0    4px,4px 0  ,0   4px,4px 0   ,50% 4px,4px 50%}
+  91.67% {background-size: 0    4px,4px 0  ,0   4px,4px 0   ,0   4px,4px 50%}
+  100%   {background-size: 0    4px,4px 0  ,0   4px,4px 0   ,0   4px,4px 0}
+}
+@keyframes l6-2 {
+  0%,49.9% {background-position: 0    50%,right 0 bottom 20px,100% 0,50% 0,right 20px bottom 0,0 100%}
+  50%,100% {background-position: 100% 50%,100% 0,left 20px top 0,50% 100%,0 100%,0 20px}
+}
+
+
+.line-7 {
+  width:60px;
+  height:60px;
+  color: #046D8B;
+  --c:linear-gradient(currentColor 0 0);
+  background:
+    var(--c) 0 38px,
+    var(--c) right 18px bottom 18px,
+    var(--c) right 18px top    18px,
+    var(--c) 18px 18px,
+    var(--c) 18px 100%,
+    var(--c) 100% 100%,
+    var(--c) 100% 0,
+    var(--c) 0 0;
+  background-repeat: no-repeat;
+  animation: l7 1.5s infinite alternate;
+}
+
+@keyframes l7 {
+  0%    {background-size: 0    4px,4px 0   ,0    4px,4px 0   ,0    4px,4px 0   ,0    4px,4px 0   }
+  12.5% {background-size: 40px 4px,4px 0   ,0    4px,4px 0   ,0    4px,4px 0   ,0    4px,4px 0   }
+  25%   {background-size: 40px 4px,4px 20px,0    4px,4px 0   ,0    4px,4px 0   ,0    4px,4px 0   }
+  37.5% {background-size: 40px 4px,4px 20px,20px 4px,4px 0   ,0    4px,4px 0   ,0    4px,4px 0   }
+  50%   {background-size: 40px 4px,4px 20px,20px 4px,4px 40px,0    4px,4px 0   ,0    4px,4px 0   }
+  62.5% {background-size: 40px 4px,4px 20px,20px 4px,4px 40px,40px 4px,4px 0   ,0    4px,4px 0   }
+  75%   {background-size: 40px 4px,4px 20px,20px 4px,4px 40px,40px 4px,4px 100%,0    4px,4px 0   }
+  87.5% {background-size: 40px 4px,4px 20px,20px 4px,4px 40px,40px 4px,4px 100%,100% 4px,4px 0   }
+  95%,
+  100%  {background-size: 40px 4px,4px 20px,20px 4px,4px 40px,40px 4px,4px 100%,100% 4px,4px 40px}
+}
+
+.line-8 {
+  width:60px;
+  height:60px;
+  color: #046D8B;
+  --c:linear-gradient(currentColor 0 0);
+  background:
+    var(--c) 0 38px,
+    var(--c) right 18px bottom 18px,
+    var(--c) right 18px top    18px,
+    var(--c) 18px 18px,
+    var(--c) 18px 100%,
+    var(--c) 100% 100%,
+    var(--c) 100% 0,
+    var(--c) 0 0;
+  background-repeat: no-repeat;
+  animation:
+    l8-1 2s infinite,
+    l8-2 2s infinite;
+}
+
+@keyframes l8-1 {
+  0%     {background-size: 0    4px,4px 0   ,0    4px,4px 0   ,0    4px,4px 0   ,0    4px,4px 0   }
+  6.25%  {background-size: 40px 4px,4px 0   ,0    4px,4px 0   ,0    4px,4px 0   ,0    4px,4px 0   }
+  12.5%  {background-size: 40px 4px,4px 20px,0    4px,4px 0   ,0    4px,4px 0   ,0    4px,4px 0   }
+  18.75% {background-size: 40px 4px,4px 20px,20px 4px,4px 0   ,0    4px,4px 0   ,0    4px,4px 0   }
+  25%    {background-size: 40px 4px,4px 20px,20px 4px,4px 40px,0    4px,4px 0   ,0    4px,4px 0   }
+  31.25% {background-size: 40px 4px,4px 20px,20px 4px,4px 40px,40px 4px,4px 0   ,0    4px,4px 0   }
+  37.5%  {background-size: 40px 4px,4px 20px,20px 4px,4px 40px,40px 4px,4px 100%,0    4px,4px 0   }
+  43.75% {background-size: 40px 4px,4px 20px,20px 4px,4px 40px,40px 4px,4px 100%,100% 4px,4px 0   }
+  48%,
+  52%    {background-size: 40px 4px,4px 20px,20px 4px,4px 40px,40px 4px,4px 100%,100% 4px,4px 40px}
+  56.25% {background-size: 0    4px,4px 20px,20px 4px,4px 40px,40px 4px,4px 100%,100% 4px,4px 40px}
+  62.5%  {background-size: 0    4px,4px 0   ,20px 4px,4px 40px,40px 4px,4px 100%,100% 4px,4px 40px}
+  68.75% {background-size: 0    4px,4px 0   ,0    4px,4px 40px,40px 4px,4px 100%,100% 4px,4px 40px}
+  75%    {background-size: 0    4px,4px 0   ,0    4px,4px 0   ,40px 4px,4px 100%,100% 4px,4px 40px}
+  81.25% {background-size: 0    4px,4px 0   ,0    4px,4px 0   ,0    4px,4px 100%,100% 4px,4px 40px}
+  87.5%  {background-size: 0    4px,4px 0   ,0    4px,4px 0   ,0    4px,4px 0   ,100% 4px,4px 40px}
+  93.75% {background-size: 0    4px,4px 0   ,0    4px,4px 0   ,0    4px,4px 0   ,0    4px,4px 40px}
+  100%   {background-size: 0    4px,4px 0   ,0    4px,4px 0   ,0    4px,4px 0   ,0    4px,4px 0   }
+}
+
+@keyframes l8-2 {
+  0%,49.9% {background-position:0 38px, right 18px bottom 18px, right 18px top 18px,18px 18px,18px 100%,100% 100%,100% 0,0 0}
+  50%,100% {background-position:right 18px bottom 18px, right 18px top 18px, 18px 18px,18px 100%,100% 100%,100% 0,0 0,bottom 18px left 0}
+}
+
+.line-9 {
+  width:60px;
+  height:60px;
+  color: #046D8B;
+  --c:linear-gradient(currentColor 0 0);
+  background:
+    var(--c),
+    var(--c),
+    var(--c),
+    var(--c);
+  background-repeat: no-repeat;
+  animation:
+    l9-1 1.5s infinite,
+    l9-2 1.5s infinite;
+}
+@keyframes l9-1 {
+  0%   {background-size: 0    4px,4px 0   }
+  25%  {background-size: 40px 4px,4px 0   }
+  45%,
+  55%  {background-size: 40px 4px,4px 42px}
+  75%  {background-size: 0    4px,4px 42px}
+  100% {background-size: 0    4px,4px 0   }
+}
+@keyframes l9-2 {
+  0%,49.9% {background-position: 0  38px               ,18px 18px,100% 18px,right 18px bottom 18px}
+  50%,100% {background-position: right 20px bottom 18px,18px 100%,20px 18px,right 18px top 0      }
+}
+
+
+.line-10 {
+  position: absolute;
+  z-index: -11;
+  width:200px;
+  height:300px;
+  color: #FFC107;
+  display: grid;
+  margin-top: 260px;
+}
+.line-10::before,
+.line-10::after {
+  content: "";
+  grid-area: 1/1;
+  --c:linear-gradient(currentColor 0 0);
+  background:
+    var(--c) 0 0,
+    var(--c) 100% 0,
+    var(--c) 100% 100%,
+    var(--c) 0 100%;
+  background-repeat: no-repeat;
+  animation:
+    l10-1 9s infinite linear,
+    l10-2 9s infinite linear;
+}
+.line-10::after {
+  margin:20px;
+  transform: scale(1);
+}
+
+@keyframes l10-1 {
+  0%   {background-size: 0    4px,4px 0   ,0    4px,4px 0   }
+  12.5%{background-size: 100% 4px,4px 0   ,0    4px,4px 0   }
+  25%  {background-size: 100% 4px,4px 100%,0    4px,4px 0   }
+  37.5%{background-size: 100% 4px,4px 100%,100% 4px,4px 0   }
+  45%,
+  55%  {background-size: 100% 4px,4px 100%,100% 4px,4px 100%}
+  62.5%{background-size: 0    4px,4px 100%,100% 4px,4px 100%}
+  75%  {background-size: 0    4px,4px 0   ,100% 4px,4px 100%}
+  87.5%{background-size: 0    4px,4px 0   ,0    4px,4px 100%}
+  100% {background-size: 0    4px,4px 0   ,0    4px,4px 0   }
+}
+
+@keyframes l10-2 {
+  0%,49.9%{background-position: 0 0   ,100% 0   ,100% 100%,0 100%}
+  50%,100%{background-position: 100% 0,100% 100%,0    100%,0 0   }
+}
+
+/**/
+/* body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-auto-rows: 130px;
+  place-items:center;
+}
+
+* {
+  box-sizing: border-box;
+} */
