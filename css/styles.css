@@ -56,13 +56,8 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  /* background-image: linear-gradient(#E4EFE7, #A7BBC7) ; */
-  background-color: #E1E8EB ;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  background-color: #cad0d3;
-  background-color: #cad0d3;
-  opacity: 1;
   background-color: #E1E8EB;
   opacity: 1;
   background-image:  radial-gradient(#a9abab 1.25px, transparent 1.25px), radial-gradient(#a9abab 1.25px, #E1E8EB 1.25px);
@@ -11031,7 +11026,7 @@ section.resume-section .resume-section-content {
   font-weight: bold;
 }
 
-.dark_mode {
+/* .dark_mode {
   align-self: center;
   width: 100spx;
   height: 50px;
@@ -11039,7 +11034,7 @@ section.resume-section .resume-section-content {
   background-size: 76px 24px;
   background-position: -26px 0;
   transition: 100ms;
-  margin-bottom:10px;}
+  margin-bottom:10px;} */
 
 
 
