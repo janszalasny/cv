@@ -11522,10 +11522,10 @@ display: none;
 .footer{
 
   text-align: right;
-  margin-right: 50px;
+  margin-right: calc(var(--bs-gutter-x) / -2);
   max-height: 10px;
   font-size: 15px;
-  margin-left: 780px;
-  max-width: 380px;
+  /* margin-left: 780px;
+  max-width: 380px; */
   cursor: none;
 }
